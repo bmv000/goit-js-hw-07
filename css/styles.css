@@ -1,0 +1,207 @@
+:root{
+    --header-color:#212121;
+    --text-color:#757575;
+    --accent-color:#2196F3;
+    --wite-color: #FFFFFF;
+    --black-color: #000000;
+    --background-dark:#2F303A;
+    --background-origin:#F5F4FA;
+    --background-basic: #E5E5E5;
+}
+body{ 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    background-color:var(--wite-color);
+    color: var(--text-color);
+    font-size: 14px;
+     
+    
+    }
+ul{
+    list-style: none;
+}
+
+
+.logo{
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.19;
+text-align: left;
+color: var(--accent-color);
+text-decoration: none;
+ 
+}
+.logo-parttwo{
+    
+    color:var(--black-color); 
+}
+.site-link{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--header-color);
+    text-decoration: none;
+}
+.contacts-link{
+    color: var(--text-color); 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+}
+.current,.site-link:hover,.site-link:focus,.contacts-link:hover,.contacts-link:focus,.contacts-footer:hover,.contacts-footer:focus {
+    color:var(--accent-color);
+}
+.hero{
+background: var(--background-dark);
+
+border-radius: 0px;
+}
+.title-hero{ 
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--wite-color);
+}
+.button{
+font-size: 16px;
+line-height: 1.88;
+text-align: center;
+letter-spacing: 0.06em;
+background-color: var(--accent-color) ;
+color: var(--wite-color);
+border: none;
+width: 200px;
+height: 50px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer;
+}
+.button:hover,.button:focus {
+    background-color: #188CE8;
+}
+.benefits, .work{
+    background:var(--wite-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.benefits-title  {
+ font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--header-color); 
+}
+.benefits-text {
+line-height: 1.71;
+
+}
+.work-title, .team-title{
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+color:var(--header-color);
+}
+.team{
+    background: var(--wite-color);
+}
+
+.team-employee{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--header-color);
+}
+.team-position{
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+
+
+}
+.footer{
+    background: var(--background-dark);
+    text-decoration: none;
+}
+.logo-parttwo-footer{
+color: var(--wite-color);
+}
+.adress-footer{
+    font-size: 14px;
+    line-height: 1.17;
+    text-decoration: none;
+    color:var(--wite-color); 
+    font-family: 'Roboto';
+font-style: normal;
+letter-spacing: 0.03em;
+}
+.contacts-footer{
+  font-size: 14px;
+  line-height: 1.17;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+letter-spacing: 0.03em;
+font-family: 'Roboto';
+font-style: normal;
+}
+/* portfolio */
+.portfolio-project{
+    background-color:var(--wite-color);
+}
+
+.portfolio-project-button{
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--header-color);
+    background:var(--background-origin);
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
+}
+.portfolio-project-button:hover,
+.portfolio-project-button:focus{
+     color: var(--wite-color);
+    background:var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px; 
+}
+
+.portfolio-project-client {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:var(--header-color)
+}
+.portfolio-project-order{
+font-size: 16px;
+line-height: 1.88;
+
+}
+.portfolio-project-button.active{
+    color: var(--wite-color);
+    background:var(--accent-color);   
+}
