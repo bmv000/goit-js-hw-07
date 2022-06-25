@@ -39,15 +39,15 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero">
-            <div class="container hero-container">
+        <section class="section hero">
+            <div class="container">
                 <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
                 <button class="button" type="button" >Заказать услугу</button>
             </div>
             
         </section>
         <!-- benefits -->
-        <section class="benefits">
+        <section class="section benefits">
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="benefits-list">
@@ -72,7 +72,7 @@
             
         </section>
         <!-- our work-->
-        <section class="work">
+        <section class="section work">
             <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="work-list">
@@ -87,38 +87,44 @@
             
         </section>
         <!-- team -->
-        <section class="team">
+        <section class="section team">
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
         <ul class="team-list"> 
         <li class="team-li" ><img class="team-photo" src="./images/img1.jpg" width="270" height="260" alt="фотография Игоря Демьяненко, Product Designer">
-           <h3 class="team-employee">Игорь Демьяненко </h3> 
+          <div class="card-team">
+            <h3 class="team-employee">Игорь Демьяненко </h3> 
             <p class="team-position" lang=en> Product Designer </p>
+        </div> 
         </li>  
         <li class="team-li"><img class="team-photo" src="./images/img2.jpg" width="270" height="260" alt="фотография Ольги Репиной, Frontend Developer">
-           <h3 class="team-employee">Ольга Репина</h3> 
+          <div class="card-team">
+            <h3 class="team-employee">Ольга Репина</h3> 
             <p class="team-position" lang=en>Frontend Developer</p>
+          </div> 
         </li>
          <li class="team-li"><img class="team-photo" src="./images/img3.jpg" width="270" height="260" alt="фотография Николая Тарасова, Marketing ">
-            <h3 class="team-employee">Николай Тарасов</h3> 
-            <p class="team-position" lang=en> Marketing</p>
+            <div class="card-team">
+                <h3 class="team-employee">Николай Тарасов</h3> 
+                <p class="team-position" lang=en> Marketing</p>
+            </div>
         </li > 
          <li class="team-li"><img src="./images/img4.jpg" width="270" height="260" alt="фотография Михаила Ермакова, UI Designer">
-          <h3 class="team-employee">Михаил Ермаков</h3> 
-           <p class="team-position" lang=en> UI Designer</p>
+          <div class="card-team">
+            <h3 class="team-employee">Михаил Ермаков</h3> 
+            <p class="team-position" lang=en> UI Designer</p>
+          </div>
         </li>    
-        
         </ul>
-            </div>
+        </div>
         
     </section>
     </main>
-    <footer class="footer">
+    <footer class="section footer">
         <div class="container">
             <div class="logo-footer" >
                 <a href="./index.html" lang="en" class="logo">Web<span class="logo-parttwo-footer">Studio</span></a>
-            </div>
-            
+            </div> 
         <address class="address">
             <ul class="address-list">
                 <li class="address-link"><a  href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer" class="adress-footer">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -126,10 +132,8 @@
                 <li class="address-link"><a href="tel:+380991111111" class="contacts-footer"> +38 099 111 11 11</a></li>
             </ul>
         </address> 
-        </div>
-        
+        </div>   
     </footer>
-
-    
+   
 </body>
 </html>
