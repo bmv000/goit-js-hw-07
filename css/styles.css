@@ -113,9 +113,12 @@ body {
 .current,
 .site-link:hover,
 .site-link:focus,
+/* .site-link:active, */
 .contacts-link:hover,
 .contacts-link:focus,
+/* .contacts-link:active, */
 .contacts-footer:hover,
+/* .contacts-footer:active, */
 .contacts-footer:focus {
   color: var(--accent-color);
 }
@@ -314,12 +317,12 @@ body {
 .sosial-icon {
   fill: var(--icon-color);
 }
-.sosial-li-icon:hover {
+.sosial-li-icon:hover, .sosial-li-icon:focus, .sosial-li-icon:active {
   background-color: var(--accent-color);
   border-radius: 50%;
   cursor: pointer;
 }
-.sosial-li-icon:hover .sosial-icon {
+.sosial-li-icon:hover .sosial-icon, .sosial-li-icon:focus .sosial-icon, .sosial-li-icon:active .sosial-icon {
   fill: var(--wite-color);
 }
 .team-li:not(:last-child) {
@@ -341,11 +344,11 @@ body {
 .client-li:not(:last-child) {
   margin-right: 30px;
 }
-.client-li:hover {
+.client-li:hover, .client-li:focus, .client-li:active {
   border: 1px solid var(--accent-color);
   cursor: pointer;
 }
-.client-li:hover .client-icon {
+.client-li:hover .client-icon, .client-li:focus .client-icon .client-li:active .client-icon {
   fill: var(--accent-color);
 }
 .footer {
@@ -421,12 +424,12 @@ color:var(--wite-color);
     fill: var(--wite-color);
   }
  
-  .sosial-li-icon-footer:hover {
+  .sosial-li-icon-footer:hover, .sosial-li-icon-footer:focus, .sosial-li-icon-footer:active {
     background-color: var(--accent-color);
     border-radius: 50%;
     cursor: pointer;
   }
-  .sosial-li-icon-footer:hover .sosial-icon {
+  .sosial-li-icon-footer:hover .sosial-icon, .sosial-li-icon-footer:focus .sosial-icon, .sosial-li-icon-footer:active .sosial-icon {
     fill: var(--wite-color);
   } 
   
@@ -455,7 +458,8 @@ color:var(--wite-color);
   cursor: pointer;
 }
 .portfolio-project-button:hover,
-.portfolio-project-button:focus {
+.portfolio-project-button:focus,
+/* .portfolio-project-button:active*/{ 
   color: var(--wite-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -490,15 +494,15 @@ color:var(--wite-color);
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-color);
-}
+}.
 .portfolio-project-order {
   margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.88;
 }
-.portfolio-project-button.active {
+ .portfolio-project-button.active {
   color: var(--wite-color);
   background: var(--accent-color);
-}
+} 
 
