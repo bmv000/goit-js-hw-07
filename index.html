@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- header -->
     <header class="header" >
         
         <div class="container header-inner">
@@ -50,13 +51,26 @@
             
         </div>
     </header>
+ 
     <main class="main">
+           <!-- hero -->
         <section class="section hero">
             <div class="container">
                 <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
-                <button class="button" type="button" >Заказать услугу</button>
+                <button  class="button"  type="button" data-modal-open >Заказать услугу</button>
             </div>
-            
+            <!-- modal -->
+           <div class="backdrop is-hidden" data-modal>
+<div class="modal" >
+  .
+    <button  type="button" class="modal-button" data-modal-close>
+        <svg class="close-modal" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+        </svg>
+    </button>
+
+</div>
+           </div> 
         </section>
         <!-- benefits -->
         <section class="section benefits">
@@ -105,11 +119,14 @@
                 <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="work-list">
                <li class="work-li"><img src="./images/box1.jpg" width="370" height="294" alt="человек сидит за столом и работает на ноутбуке. Видны его руки, клавиатура, экран монитора, на котором виден часть программного кода, кусок стола">
-               </li> 
+               <p class="work-text">Десктопные приложения</p>
+            </li> 
                 <li class="work-li"><img src="./images/box2.jpg" width="370" height="294"  alt="человек сидит за столом и работает на ноутбуке. Видны его руки, в которых он держит телефон, на мониторе видны эскизы телефонов">
+                    <p class="work-text">Мобильные приложения</p>
                 </li>
                <li class="work-li"><img src="./images/box3.jpg" width="370" height="294"  alt="человек сидит за столом и работает на планшете. Видны его руки, в которых он его держит, на экране  видно палитру с градацией цвета">
-               </li> 
+                <p class="work-text">Дизайнерские решения</p>
+            </li> 
             </ul>
             </div>
             
@@ -393,6 +410,6 @@
                 </ul>
             </div>        
     </footer>
-   
+    <script src="./js/modal.js"></script>  
 </body>
 </html>
