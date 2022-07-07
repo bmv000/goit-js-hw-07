@@ -239,6 +239,7 @@ border-radius: 2px;
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 
 }
 .modal{
@@ -270,6 +271,7 @@ height: 30px;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 background-color: var(--wite-color);
+cursor: pointer;
 }
 .visually-hidden {
   position: absolute;
@@ -336,8 +338,11 @@ justify-content: center;
   display: flex;
   
 }
+.work-thumb{ 
+  position: relative;
+}
 .work-li{
-position: relative;
+
   padding-bottom: 0px;
 }
 .work-li + .work-li {
