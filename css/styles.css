@@ -242,8 +242,10 @@ border-radius: 2px;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-
 }
+
+/* Modal/form */
+
 .modal{
   position: absolute;
 
@@ -252,7 +254,7 @@ border-radius: 2px;
   
   min-width: 528px;
 min-height: 581px;
-padding: 30px;
+padding: 40px;
 background-color: var(--wite-color);
 transform: translate(-50%, -50%) scale(1);
 transition: transform var(--time) var(--time-function);
@@ -279,15 +281,9 @@ transition: fill var(--time) var(--time-function);
 .modal-button:hover, .modal-button:focus{
 fill: var(--accent-color);
 }
-.form-modal{
-  display: flex;
-flex-direction: column;
-align-items: center;
-width: 448px;
-padding: 0;
-margin: 0;
 
-}
+
+
 .form-group-field{
 width: 100%;
 
@@ -308,6 +304,7 @@ margin-bottom: 4px;
 
 }
 .form-title{
+  display: block;
   font-weight: 700;
 
   font-size: 20px;
@@ -337,14 +334,14 @@ margin-bottom: 12px;
   
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-width: 448px;
+width: 100%;
 height: 40px;
 transition: border var(--time) var(--time-function),
 border-radius var(--time) var(--time-function),
 fill var(--time) var(--time-function);
 }
 
-.form-input:hover,.form-input:focus {
+.form-input:focus {
   outline: none;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -371,7 +368,7 @@ border-radius: 4px;
 transition: border var(--time) var(--time-function),
 border-radius var(--time) var(--time-function);
 }
-.form-ta-coment:hover,.form-ta-coment:focus{
+.form-ta-coment:focus{
   outline: none;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
@@ -389,10 +386,11 @@ color: rgba(117, 117, 117, 0.5);
 
 }
 .form-policity{
-  position: relative;
+ 
   display: flex;
   align-items: center;
-  padding-left: 24px;
+  justify-content: center;
+ 
   margin-bottom: 30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -400,15 +398,13 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .icon-checkbox{
-  position: absolute;
-  display: inline-block;
-  left: 0;
+  
   width: 16px;
   height: 16px;
   background-image: url('../images/Vector.svg');
   background-size: contain;
   background-origin: border-box;
-
+margin-right: 6px;
 }
 .form-checkbox:checked + .icon-checkbox{
   border-color: transparent;
@@ -428,12 +424,15 @@ color:var(--accent-color);
 
 }
 .form-field-button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+ 
 }
 .modal-form-button{
-  
+ 
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
   
