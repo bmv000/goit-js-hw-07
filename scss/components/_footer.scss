@@ -1,0 +1,31 @@
+.footer {
+   
+    padding-top: 60px;
+  padding-bottom: 60px;
+  background: $background-dark;
+  text-decoration: none;
+
+&__logo-parttwo {
+  color: $wite-color;
+}
+&__logo {
+  margin-bottom: 20px;
+}
+&__list{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  }
+  &__li + &__li{
+    
+    margin-left: 70px; 
+}
+
+
+&__address {
+  
+  margin-bottom: 10px;
+}
+
+}
+  

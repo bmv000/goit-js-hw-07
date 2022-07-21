@@ -1,0 +1,38 @@
+.modal{
+    position: absolute;
+  
+    top: 50%;
+    left: 50%;
+    
+    min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: $wite-color;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $time $time-function;
+  
+  .backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  &__button-close{
+   
+    position: absolute; 
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $wite-color;
+  cursor: pointer;
+  transition: fill $time $time-function;
+  }
+  
+  &__button-close:hover, &__button-close:focus{
+  fill: $accent-color;
+  }
+  
+}

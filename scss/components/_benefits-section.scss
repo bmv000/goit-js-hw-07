@@ -1,0 +1,34 @@
+.benefits {
+    display: flex;
+ 
+  
+  
+  &__li {
+    max-width: 270px;
+  
+  }
+  &__li:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__icon {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 120px;
+    background: $background-origin;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $header-color;
+  }
+  &__text {
+    line-height: 1.71;
+    margin: 0;
+  }
+}

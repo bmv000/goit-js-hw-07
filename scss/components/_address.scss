@@ -1,0 +1,32 @@
+.address {
+    font-size: 14px;
+  line-height: 1.17;
+  text-decoration: none;
+  color: $wite-color;
+  font-family: 'Roboto';
+  font-style: normal;
+  letter-spacing: 0.03em;
+
+
+  padding-left: 0;
+
+&__link:not(:last-child) {
+  margin-bottom: 10px;
+}
+&__contacts {
+  font-size: 14px;
+  line-height: 1.17;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  font-family: 'Roboto';
+  font-style: normal;
+  transition: color $time $time-function;
+  
+  &:hover,
+    
+  &:focus {
+    color: $accent-color;
+  }
+}
+  }

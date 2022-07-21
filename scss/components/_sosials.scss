@@ -1,0 +1,34 @@
+.sosial {
+    display: flex;
+   
+   justify-content: center; 
+  
+  
+  &__link-icon {
+    display: flex;
+    align-items: center;
+        justify-content: center;
+    width: 44px;
+    height: 44px;
+    transition: background-color $time $time-function,
+                border-radius $time $time-function;
+                
+                &:hover .sosial__icon, &:focus .sosial__icon{
+                  fill: $wite-color;
+                }
+   &:hover, &:focus {
+     background-color: $accent-color;
+     border-radius: 50%;
+                
+                }
+  } 
+  &__li-icon:not(:last-child) {
+    margin-right: 10px;
+  }  
+  
+  
+  &__icon {
+    fill: $icon-color;
+    transition: fill $time $time-function;
+  }
+}

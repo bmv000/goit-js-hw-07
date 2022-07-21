@@ -1,0 +1,53 @@
+.hero {
+    max-width: 1600px;
+      margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: $background-dark;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/bakcground/bakcground-hero.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+    text-align: center;
+ 
+  
+  &__title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $wite-color;
+  
+  }
+ &__button {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: $accent-color;
+    color: $wite-color;
+    border: none;
+    min-width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color $time $time-function;
+  }
+  &__button:hover,
+  &__button:focus,
+  &__button:active{
+    background-color: #188ce8;
+  }
+ 
+  
+}

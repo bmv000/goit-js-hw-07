@@ -1,0 +1,38 @@
+
+.footer-sosial{
+    &__list{
+        display: flex;
+      }
+    
+    &__link-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+        height: 44px;
+      
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        transition: border-radius $time $time-function,
+        background-color $time $time-function,
+        fill $time $time-function;
+    
+        &:hover, &:focus {
+          background-color: $accent-color;
+          border-radius: 50%;
+        }
+        &__link-icon:hover .sosial-icon, &__link-icon:focus .sosial-icon {
+            fill: var(--wite-color);
+          } 
+        
+      }
+    
+    &__li-icon:not(:last-child) {
+        margin-right: 10px;
+      }
+      &__icon{
+        fill: $wite-color;
+      }
+    
+      
+    } 
