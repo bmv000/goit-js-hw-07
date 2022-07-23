@@ -1,30 +1,33 @@
 
 @import'./utils/variables';
-@import'./utils/base';
 @import'./utils/hidden';
-@import'./utils/current';
+
+@import'./base/reset';
+@import'./base/common';
 
 
+@import'./components/current';
 @import'./components/logo';
 @import'./components/title';
-@import'./components/section';
-@import'./components/header';
-@import'./components/hero-section';
-@import'./components/modal';
-@import'./components/benefits-section';
-@import'./components/work-section';
-@import'./components/team-section';
-@import'./components/sosials';  
-@import'./components/client-section';
-@import'./components/footer';  
-@import'./components/forms';  
-@import'./components/footer-form'; 
-@import'./components/footer-sosial'; 
-@import'./components/address'; 
-@import'./components/backdrop'; 
+@import'./components/backdrop';
+@import'./components/section'; 
 
-@import'./components/portfolio-section';
-@import'./components/portfolio-card';
+
+@import'./layout/header';
+@import'./layout/hero-section';
+@import'./layout/modal';
+@import'./layout/benefits-section';
+@import'./layout/work-section';
+@import'./layout/team-section';
+@import'./layout/sosials';  
+@import'./layout/client-section';
+@import'./layout/footer';  
+@import'./layout/forms';  
+@import'./layout/footer-form'; 
+@import'./layout/footer-sosial'; 
+@import'./layout/address'; 
+@import'./layout/portfolio-section';
+@import'./layout/portfolio-card';
   
   
   
