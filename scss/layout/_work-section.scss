@@ -2,6 +2,9 @@
 
   
   .work {
+    
+      
+    
     padding-top: 0;
   
   &__title
@@ -11,7 +14,7 @@
     
   }
   &__list {
-    display: flex;
+     display: flex;
     
   }
   &__thumb{ 
@@ -42,6 +45,8 @@
   
      
     color: $wite-color;
-    
   }
-}
+     @media screen and (max-width: 1199px) {
+       display: none;
+     }
+  }

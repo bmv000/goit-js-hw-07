@@ -1,6 +1,58 @@
 /* Portfolio */
   .portfolio-project{
 
+    
+      
+            &__list {
+                @media screen and (min-width: $tablet) {
+                    display: flex;
+                    margin: -15px;
+                    flex-wrap: wrap;
+
+              @media screen and (min-width: $mobile) {
+                width: 450px;
+              }
+      
+              &:not(:last-child) {
+                @media screen and (max-width: $pretablet) {
+                  margin-bottom: 30px;
+                }
+              }
+      
+              @media screen and (min-width: $tablet) {
+                display: flex;
+                margin: 15px;
+                width: calc((100% - 2 * 30px) / 2);
+              }
+      
+              @media screen and (min-width: $desktop) {
+                width: calc((100% - 3 * 30px) / 3);
+              }
+      
+            }
+
+             &__li {
+      @media screen and (min-width: $mobile) {
+          width: 450px;
+        }
+      
+        &:not(:last-child) {
+          @media screen and (max-width: $pretablet) {
+            margin-bottom: 30px;
+          }
+        }
+      
+        @media screen and (min-width: $tablet) {
+          display: flex;
+          margin: 15px;
+          width: calc((100% - 2 * 30px) / 2);
+        }
+      
+        @media screen and (min-width: $desktop) {
+          width: calc((100% - 3 * 30px) / 3);
+        }
+             }
+
   &__button-list {
     display: flex;
     justify-content: center;
@@ -41,23 +93,7 @@
     background: $accent-color;
   } 
 }
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__li {
-    
-    margin-right: 30px;
-    margin-bottom: 30px;
-   
   
-  &:nth-child(3n) {
-    margin-right: 0;
+ 
   }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
   }
-   
-}
-  
-}

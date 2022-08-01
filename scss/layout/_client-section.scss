@@ -1,10 +1,7 @@
 .client {
-
-  &__title {
-    margin-top: 0;
-    margin-bottom: 50px;
+  
     
-  }
+  
 &__icon {
     display: flex;
     justify-content: center;
@@ -16,20 +13,51 @@
     border: 1px solid $icon-color;
     border-radius: 4px;
     transition: border $time $time-function,
+    fill $time $time-function;   
+ 
+  transition: border $time $time-function,
     fill $time $time-function;
+}
+
+ &__icon:hover,
+ &__icon:focus,
+ &__li:focus &__icon {
+   fill: $accent-color;
+   border: 1px solid $accent-color;
+ }
+ 
+   &__list {
+display: flex;
+  justify-content: center;
+  margin: -15px;
+    @media screen and (max-width: $predesktop) {
+        flex-wrap: wrap;
+      }
   }
-  &__list {
-    display: flex;
-  }
+  // &__title {
+  //     margin-top: 0;
+  //     margin-bottom: 50px;
   
-  &__li:not(:last-child) {
-    margin-right: 30px;
-    transition: border $time $time-function,
-    fill $time $time-function;
-  }
-  
- &__icon:hover, &__icon:focus, &__li:focus &__icon{
-    fill: $accent-color;
-    border: 1px solid $accent-color;
-  }
+  //   }
+      
+   
+  // &__li:not(:last-child) {
+  //   margin-right: 30px;
+   
+  // }
+   
+
+
+ &__li {
+   margin: 15px;
+
+   @media screen and (min-width: $pretablet) {
+     width: calc((100% - 2 * 30px) / 2);
+   }
+
+   @media screen and (min-width: $tablet) {
+     width: calc((100% - 3 * 30px) / 3);
+
+   }
+ }
 }

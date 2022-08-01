@@ -7,7 +7,7 @@
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     visibility: visible;
-    transition: opacity &time $time-function,
+    transition: opacity $time $time-function,
     visibility $time $time-function;
   }
   .backdrop.is-hidden {
