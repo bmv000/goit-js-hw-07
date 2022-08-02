@@ -4,60 +4,37 @@
     
       
             &__list {
-                @media screen and (min-width: $tablet) {
-                    display: flex;
-                    margin: -15px;
-                    flex-wrap: wrap;
-
-              @media screen and (min-width: $mobile) {
-                width: 450px;
-              }
-      
-              &:not(:last-child) {
-                @media screen and (max-width: $pretablet) {
-                  margin-bottom: 30px;
-                }
-              }
-      
-              @media screen and (min-width: $tablet) {
-                display: flex;
-                margin: 15px;
-                width: calc((100% - 2 * 30px) / 2);
-              }
-      
-              @media screen and (min-width: $desktop) {
-                width: calc((100% - 3 * 30px) / 3);
-              }
+               display: flex;
+               flex-wrap: wrap;
+               gap: 30px;
       
             }
 
              &__li {
-      @media screen and (min-width: $mobile) {
-          width: 450px;
-        }
       
-        &:not(:last-child) {
-          @media screen and (max-width: $pretablet) {
-            margin-bottom: 30px;
-          }
-        }
       
         @media screen and (min-width: $tablet) {
-          display: flex;
-          margin: 15px;
-          width: calc((100% - 2 * 30px) / 2);
+          
+          flex-basis: calc((100% - 30px) / 2);
         }
       
         @media screen and (min-width: $desktop) {
-          width: calc((100% - 3 * 30px) / 3);
+          flex-basis: calc((100% - 2 * 30px) / 3);
         }
              }
 
   &__button-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+        @media screen and (min-width: $desktop) {
+          margin-bottom: 50px;
+        }
   }
   &__button-li + &__button-li {
     margin-left: 8px;
@@ -77,7 +54,9 @@
     transition: color $time $time-function,
       background-color $time $time-function,
       box-shadow $time $time-function;
-  
+  @media screen and (max-width: $pretablet ) {
+    margin-bottom: 15px;
+  }
  
   
   &:hover,
@@ -96,4 +75,4 @@
   
  
   }
-  }
+  

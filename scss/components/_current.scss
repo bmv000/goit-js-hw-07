@@ -1,9 +1,14 @@
 .current{
-    position: relative;
-  
-  
+
+  @media screen and (max-width: $pretablet ) {
+    color: $accent-color;
   }
-  .current::after{
+     @media screen and (min-width: $tablet ){
+    position: relative;
+  color: $accent-color;
+  
+
+  &::after{
     position: absolute;
     display: block;
     content: "";
@@ -13,8 +18,8 @@
   
   background-color: $accent-color;
   border-radius: 2px;
+  }
+ 
   
-  }
-  .current{
-    color: $accent-color;
-  }
+}
+}
