@@ -13,4 +13,8 @@
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: $wite-color;
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
+   
    }

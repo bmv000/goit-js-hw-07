@@ -24,20 +24,29 @@
                         <a href="./index.html" lang="en" class="logo">Web<span class="logo__parttwo">Studio</span></a>
                     </div>
 
-                    <button class="menu-toggle-open" type="button" aria-expanded="false" data-menu-button aria-controls="mobile-menu">
+                    <!-- <button class="menu-toggle-open" type="button" aria-expanded="false" data-menu-button aria-controls="mobile-menu" aria-label="переключатель мобильного меню">
                         <svg width="40" height="40" class="menu-toggle__icon--open">
-                            <use href="./images/symbol-defs.svg#icon-open-menu"></use>
+                            <use class="header__mobile-button-icon--open" href="./images/symbol-defs.svg#icon-open-menu"></use>
                         </svg>
-                    </button>
+                     </button> -->
+                     <button class="header__button" type="button" aria-expanded="false" aria-label="переключатель мобильного меню"
+                    data-menu-button
+          aria-controls="menu-container">
+                        <svg width="40" height="40" class="header__mobile-button-icon" >
+                            <use class="icon-menu-open" href="./images/symbol-defs.svg#icon-open-menu"></use>
+                             <use class="icon-menu-close"  href="./images/symbol-defs.svg#icon-close-menu"></use>
+                        </svg>
+                    </button> 
 
-<div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+<div class="menu-container " id="menu-container" data-menu>
 
-    <button class="menu-toggle-close" type="button" aria-expanded="false"  aria-controls="mobile-menu" data-menu-button >
+
+    <!-- <button class="js-close-menu" type="button" aria-expanded="false"  aria-controls="mobile-menu" data-menu-button aria-label="переключатель мобильного меню">
                         <svg width="40" height="40" class="menu-toggle__icon--close">
                           
-                             <use href="./images/symbol-defs.svg#icon-close-menu"></use>
+                             <use class="header__mobile-button-icon--close" href="./images/symbol-defs.svg#icon-close-menu"></use>
                         </svg>
-                    </button>
+                    </button> -->
                     <nav class="header__nav">
                 <ul class="header__nav-link">
                      <li class="link"><a href="./index.html" class="header__link current">Студия</a></li>
@@ -82,14 +91,7 @@
             
         </div>
     </header>
-     <!-- <button class="menu-toggle js-close-menu" 
-                    data-menu-button
-          aria-controls="mobile-container">
-                        <svg width="40" height="40" class="header__mobile-button-icon">
-                            <use href="./images/symbol-defs.svg#icon-open-menu"></use>
-                             <use href="./images/symbol-defs.svg#iicon-close-menu"></use>
-                        </svg>
-                    </button> -->
+    
 
     <main class="main">
            <!-- hero -->
@@ -482,7 +484,7 @@
 
       <!--footer -->
 
-    <!-- <footer class="section footer">
+    <footer class="section footer">
             <div class="container footer__list ">
                
 <div class="footer__li">
@@ -538,8 +540,9 @@
 </div>
 <div class="footer__li">
     <form class="footer-form">
-    <h3 class="footer-title">Подпишитесь на рассылку</h3>
+     <h3 class="footer-title">Подпишитесь на рассылку</h3>
     <div class="form-list">
+       
         <input class="form-email" type="email" name="email" id="email" placeholder="E-mail"/>
     <button class="form-button" type="submit">Подписаться
         <svg width="24" height="24" class="form-icon" aria-label="">
@@ -554,9 +557,9 @@
 </div>
                  
     </footer>
-    -->
+   
     <!-- modal -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal" >
           
             <button  type="button" class="modal__button-close" data-modal-close>
@@ -607,8 +610,8 @@
             </form>
         </div>
         
-                   </div>  -->
-                   <!-- <script src="./js/modal.js"></script>  -->
+                   </div>  
+                   <script src="./js/modal.js"></script> 
                    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

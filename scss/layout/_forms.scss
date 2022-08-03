@@ -103,14 +103,24 @@
     }
     &__policity{
      
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      
      
       margin-bottom: 30px;
-      line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1667;
+
+
+ 
+
       letter-spacing: 0.03em;
       color: text-color;
+      @media screen and (min-width: $desktop) {
+        display: flex;
+          align-items: center;
+          justify-content: center;
+      font-size: 14px;
+        line-height: 1.71;
+      }
     }
     
     &__icon-checkbox{

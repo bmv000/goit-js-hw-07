@@ -13,13 +13,34 @@
 }
 &__list{
   display: flex;
+ flex-direction: column;
+  justify-content: center;
+
+ 
+ @media screen and (min-width: $tablet) {
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-between;
-  }
-  &__li + &__li{
+    justify-content: space-between;
+ }
+
+  //  @media screen and (min-width: $desktop) {
+   
+  //     align-items: baseline;
+  //     justify-content: space-between;
+  
+  
+  // }
+
     
+  &__li + &__li{
+    @media screen and (max-width: $tablet) {
+      margin-top: 60px;
+    }
+        @media screen and (min-width: $tablet) {
     margin-left: 70px; 
 }
+  }
 
 
 &__address {
@@ -29,3 +50,4 @@
 
 }
   
+}
