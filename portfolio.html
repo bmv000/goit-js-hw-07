@@ -13,41 +13,41 @@
 <body>
     <header class="header" >
         
-    <div class="container header__inner">
-       
-            <nav class="header__nav">
-                <div class="header__logo">
-                    <a href="./index.html" lang="en" class="logo">Web<span class="logo__parttwo">Studio</span></a>
-                </div>
+        <div class="container header__inner">
+           
                 
-                   <ul class="header__nav-link">
-                 <li class="link"><a href="./index.html" class="header__link ">Студия</a></li>
-                 <li class="link"><a href="./portfolio.html" class="header__link current" >Портфолио</a></li>
-                 <li class="link"><a href="#" class="header__link">Контакты</a></li>   
-                </ul>
-            </nav>
-               <ul class="header__contacts">
-                   <li class="link">                       
-                    <a class="header__contacts-link" href="mailto:info@devstudio.com">
-                        <svg width="16" height="16" class="header__contacts-link-icon">
-                            <use href="./images/symbol-defs.svg#icon-logo-envelope">
-                            </use>
-                        </svg>
-                        info@devstudio.com</a>
-                   </li>
-                   <li class="link">                        
-                    <a class="header__contacts-link" href="tel:+380961111111" >
-                        <svg width="16" height="16" class="header__contacts-link-icon">
-                            <use href="./images/symbol-defs.svg#icon-logo-smartphone">
-                            </use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                   </li>
-                </ul>
-
-        
-    </div>
-</header>
+                    <div class="header__logo">
+                        <a href="./index.html" lang="en" class="logo">Web<span class="logo__parttwo">Studio</span></a>
+                    </div>
+                    <nav class="header__nav">
+                       <ul class="header__nav-link">
+                     <li class="link"><a href="./index.html" class="header__link ">Студия</a></li>
+                     <li class="link"><a href="./portfolio.html" class="header__link current">Портфолио</a></li>
+                     <li class="link"><a href="#" class="header__link">Контакты</a></li>   
+                    </ul>
+                </nav>
+                   <ul class="header__contacts">
+                       <li class="link">                       
+                        <a class="header__contacts-link mail" href="mailto:info@devstudio.com">
+                            <svg width="16" height="16" class="header__contacts-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-logo-envelope">
+                                </use>
+                            </svg>
+                            info@devstudio.com</a>
+                       </li>
+                       <li class="link">                        
+                        <a class="header__contacts-link" href="tel:+380961111111" >
+                            <svg width="16" height="16" class="header__contacts-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-logo-smartphone">
+                                </use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                       </li>
+                    </ul>
+    
+            
+        </div>
+    </header>
     <main>
         <!-- Наши проекты -->
         <section class="section">
@@ -64,9 +64,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img  srcset="./images/portfolio/imgp1.jpg 1x, ./images/portfolio/imgp1-370@2x.jpg 2x"
-                        src="./images/portfolio/imgp1.jpg" width="370" height="294"
+                       <picture>
+               <source   
+                        srcset="./images/portfolio/imgp1-450.jpg 1x,
+                         ./images/portfolio/imgp1-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp1-354.jpg 1x,
+                         ./images/portfolio/imgp1-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp1.jpg 1x,
+                         ./images/portfolio/imgp1-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+
+            <img src="./images/portfolio/imgp1.jpg" width="370" height="294"
                         alt="страница из сайта Технокряк с сотрудниками ">
+                         </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -83,9 +98,26 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img srcset="./images/portfolio/imgp2.jpg 1x, ./images/portfolio/imgp2-370@2x.jpg 2x"
+
+                        <picture>
+               <source   
+                        srcset="./images/portfolio/imgp2-450.jpg 1x,
+                         ./images/portfolio/imgp2-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp2-354.jpg 1x,
+                         ./images/portfolio/imgp2-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp2.jpg 1x,
+                         ./images/portfolio/imgp2-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+
+                        <img 
                         src="./images/portfolio/imgp2.jpg" width="370" height="294"
                     alt="Игрок из баскетбольной команды New Orlean хочет сделать бросок а игрок баскетбольной команды Golden Star хочет ему помешать ">
+                    </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -101,9 +133,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img srcset="./images/portfolio/imgp3.jpg 1x, ./images/portfolio/imgp3-370@2x.jpg 2x"
+                        <picture>
+               <source   
+                        srcset="./images/portfolio/imgp3-450.jpg 1x,
+                         ./images/portfolio/imgp3-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp3-354.jpg 1x,
+                         ./images/portfolio/imgp3-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp3.jpg 1x,
+                         ./images/portfolio/imgp3-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+                        <img 
                         src="./images/portfolio/imgp3.jpg" width="370" height="294"
                    alt="логотип ресторана Seafood">
+                    </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -119,9 +166,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img srcset="./images/portfolio/imgp4.jpg 1x, ./images/portfolio/imgp4-370@2x.jpg 2x"
+                        <picture>
+               <source   
+                        srcset="./images/portfolio/imgp4-450.jpg 1x,
+                         ./images/portfolio/imgp4-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp4-354.jpg 1x,
+                         ./images/portfolio/imgp4-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp4.jpg 1x,
+                         ./images/portfolio/imgp4-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+                        <img 
                         src="./images/portfolio/imgp4.jpg" width="370" height="294"
                    alt="наушники на белом фоне">
+                    </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -137,9 +199,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
+                        <picture>
+               <source   
+                        srcset="./images/portfolio/imgp5-450.jpg 1x,
+                         ./images/portfolio/imgp5-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp5-354.jpg 1x,
+                         ./images/portfolio/imgp5-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp5.jpg 1x,
+                         ./images/portfolio/imgp5-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
                         <img srcset="./images/portfolio/imgp5.jpg 1x, ./images/portfolio/imgp5-370@2x.jpg 2x"
                         src="./images/portfolio/imgp5.jpg" width="370" height="294"
                    alt="На белом фоне две коробки">
+                   </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -155,9 +232,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img srcset="./images/portfolio/imgp6.jpg 1x, ./images/portfolio/imgp6-370@2x.jpg 2x"
+                         <picture>
+               <source   
+                        srcset="./images/portfolio/imgp6-450.jpg 1x,
+                         ./images/portfolio/imgp6-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp6-354.jpg 1x,
+                         ./images/portfolio/imgp6-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp6.jpg 1x,
+                         ./images/portfolio/imgp6-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+                        <img 
                         src="./images/portfolio/imgp6.jpg" width="370" height="294"
                    alt="экран монитора где видна страничка Веб-сайта">
+                   </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -173,9 +265,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img srcset="./images/portfolio/imgp7.jpg 1x, ./images/portfolio/imgp7-370@2x.jpg 2x"
+                         <picture>
+               <source   
+                        srcset="./images/portfolio/imgp7-450.jpg 1x,
+                         ./images/portfolio/imgp7-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp7-354.jpg 1x,
+                         ./images/portfolio/imgp7-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp7.jpg 1x,
+                         ./images/portfolio/imgp7-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+                        <img 
                         src="./images/portfolio/imgp7.jpg" width="370" height="294"
                    alt="раскрытая книга">
+                   </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -191,9 +298,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img srcset="./images/portfolio/imgp8.jpg 1x, ./images/portfolio/imgp8-370@2x.jpg 2x"
+                        <picture>
+               <source   
+                        srcset="./images/portfolio/imgp8-450.jpg 1x,
+                         ./images/portfolio/imgp8-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp8-354.jpg 1x,
+                         ./images/portfolio/imgp8-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp8.jpg 1x,
+                         ./images/portfolio/imgp8-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+                        <img 
                         src="./images/portfolio/imgp8.jpg" width="370" height="294"
                         alt="ярлык LAB на белом фоне ">
+                        </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -209,9 +331,24 @@
               <li class="portfolio-project__li">
                 <a class="portfolio-card" href="#">
                     <div class="portfolio-card__thumb">
-                        <img srcset="./images/portfolio/imgp9.jpg 1x, ./images/portfolio/imgp9-370@2x.jpg 2x"
+                         <picture>
+               <source   
+                        srcset="./images/portfolio/imgp9-450.jpg 1x,
+                         ./images/portfolio/imgp9-450@2x.jpg 2x"
+                         media="(max-width: 767px)"/>
+
+ <source   
+                        srcset="./images/portfolio/imgp9-354.jpg 1x,
+                         ./images/portfolio/imgp9-354@2x.jpg 2x"
+                         media="(max-width: 1199px)"/>
+                          <source   
+                        srcset="./images/portfolio/imgp9.jpg 1x,
+                         ./images/portfolio/imgp9-370@2x.jpg 2x"
+                         media="(min-width: 1200px)"/>
+                        <img 
                         src="./images/portfolio/imgp9.jpg" width="370" height="294"
                   alt="экран ноутбука с открытым приложением Growing Business">
+                  </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
                     </div>
@@ -300,6 +437,71 @@
 </div>
              
 </footer>
-   
+
+ <div class="container menu__inner">
+           
+                
+                    
+
+                   
+                     <button class="menu__button" type="button" aria-expanded="false" aria-label="переключатель мобильного меню"
+                    data-menu-button
+          aria-controls="menu-container">
+                        <svg width="40" height="40" class="menu__mobile-button-icon" >
+                            <use class="icon-menu-open" href="./images/symbol-defs.svg#icon-open-menu"></use>
+                             <use class="icon-menu-close"  href="./images/symbol-defs.svg#icon-close-menu"></use>
+                        </svg>
+                    </button> 
+
+<div class="menu-container " id="menu-container" data-menu>
+
+
+  
+                    <nav class="menu__nav">
+                <ul class="menu_nav-link">
+                     <li class="link"><a href="./index.html" class="menu__link current">Студия</a></li>
+                     <li class="link"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                     <li class="link"><a href="#" class="menu__link">Контакты</a></li>   
+                </ul>
+                </nav>
+                   <ul class="menu__contacts">
+                       <li class="link"> 
+                         <a class="menu__contacts-link menu__tel " href="tel:+380961111111" >
+                            <svg width="16" height="16" class="menu__contacts-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-logo-smartphone">
+                                </use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                        
+                       
+                       </li>
+                       <li class="link">                        
+                         <a class="menu__contacts-link menu__mail" href="mailto:info@devstudio.com">
+                            <svg width="16" height="16" class="menu__contacts-link-icon">
+                                <use href="./images/symbol-defs.svg#icon-logo-envelope">
+                                </use>
+                            </svg>
+                            info@devstudio.com</a>
+                       </li>
+                    </ul>
+
+                    <ul class="menu__social-list">
+        <li class="menu__social-item"><a class="menu__social-link" href="#">Twitter</a></li>
+        <li class="menu__social-item">
+            <a class="menu__social-link" href="#">Instagram</a>
+        </li>
+        <li class="menu__social-item">
+            <a class="menu__social-link" href="#">Facebook</a>
+        </li>
+        <li class="menu__social-item">
+            <a class="menu__social-link" href="#">LinkedIn</a>
+        </li>
+    </ul> 
+</div>
+                       
+    
+            
+        </div>
+     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -30,26 +30,17 @@
 display: flex;
   justify-content: center;
   margin: -15px;
+  gap: 30px;
     @media screen and (max-width: $predesktop) {
         flex-wrap: wrap;
       }
   }
-  // &__title {
-  //     margin-top: 0;
-  //     margin-bottom: 50px;
   
-  //   }
-      
-   
-  // &__li:not(:last-child) {
-  //   margin-right: 30px;
-   
-  // }
    
 
 
  &__li {
-   margin: 15px;
+
 
    @media screen and (min-width: $pretablet) {
      width: calc((100% - 2 * 30px) / 2);

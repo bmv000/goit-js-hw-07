@@ -1,4 +1,10 @@
 .address {
+
+  
+  display: flex;
+  flex-direction: column;
+    text-align: center;
+    
     font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
@@ -9,9 +15,16 @@
 
 
   padding-left: 0;
+&__li{
+@media screen and (min-widht: $desktop) {
+    text-align: left;
+  }
+}
 
 &__li:not(:last-child) {
   margin-bottom: 10px;
+
+ 
 }
 .address__link{
   font-size: 14px;
@@ -21,6 +34,7 @@
   letter-spacing: 0.03em;
   font-family: 'Roboto';
   font-style: normal;
+  
 }
 &__contacts {
   font-size: 14px;
