@@ -103,8 +103,8 @@
     }
     &__policity{
      
-      
-     
+    display: flex;
+     flex-wrap: nowrap;
       margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.1667;
@@ -118,7 +118,7 @@
         display: flex;
           align-items: center;
           justify-content: center;
-      flex-shrink: 0;
+     
           font-size: 14px;
 
         line-height: 1.71;
@@ -126,7 +126,8 @@
     }
     
     &__icon-checkbox{
-      
+      display: flex;
+      flex-shrink: 0;
       width: 16px;
       height: 16px;
       background-image: url('../images/Vector.svg');
@@ -142,14 +143,18 @@
     }
     &__policiti-link{
       margin-left: 5px;
-      line-height: 1.71;
-    
+     
+    font-size: 12px;
+      line-height: 1.1667;
     letter-spacing: 0.03em;
     text-decoration: none;
     text-decoration-line: underline;
     
     color: $accent-color;
-    
+    @media screen and (min-width: $desktop) {
+    line-height: 1.71;
+    font-size: 14px;
+    }
     }
     &__field-button{
       text-align: center;

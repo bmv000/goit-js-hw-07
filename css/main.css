@@ -462,6 +462,7 @@ body {
     transition: -webkit-transform 500ms;
     transition: transform 500ms;
     transition: transform 500ms, -webkit-transform 500ms;
+    display: none;
   }
   .menu-container.is-open {
     display: block;
@@ -1043,6 +1044,11 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 .form-modal__policity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.1667;
@@ -1060,13 +1066,16 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
     font-size: 14px;
     line-height: 1.71;
   }
 }
 .form-modal__icon-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 16px;
   height: 16px;
   background-image: url("../images/Vector.svg");
@@ -1082,12 +1091,19 @@ body {
 }
 .form-modal__policiti-link {
   margin-left: 5px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1667;
   letter-spacing: 0.03em;
   text-decoration: none;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .form-modal__policiti-link {
+    line-height: 1.71;
+    font-size: 14px;
+  }
 }
 .form-modal__field-button {
   text-align: center;
