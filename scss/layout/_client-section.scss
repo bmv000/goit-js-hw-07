@@ -1,5 +1,9 @@
 .client {
+  &__title {
+      margin-top: 0;
+      margin-bottom: 50px;
   
+    }
     
   
 &__icon {
@@ -7,7 +11,7 @@
     justify-content: center;
     align-items: center;
     fill: $icon-color;
-    width: 170px;
+    max-width: 170px;
     height: 92px;
   
     border: 1px solid $icon-color;
@@ -29,8 +33,13 @@
    &__list {
 display: flex;
   justify-content: center;
-  margin: -15px;
+  
   gap: 30px;
+
+  // @media screen and (min-width: 320px) {
+  //         flex-wrap: wrap;
+  //        }
+
     @media screen and (max-width: $predesktop) {
         flex-wrap: wrap;
       }
@@ -42,7 +51,7 @@ display: flex;
  &__li {
 
 
-   @media screen and (min-width: $pretablet) {
+   @media screen and (max-width: $pretablet) {
      width: calc((100% - 2 * 30px) / 2);
    }
 

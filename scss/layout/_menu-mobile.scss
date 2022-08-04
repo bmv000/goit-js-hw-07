@@ -2,9 +2,7 @@
 
 @media screen and (max-width: $pretablet) {
 
-    .menu__inner {
-        height: 60px;
-    }
+    
     .menu__nav{
         margin-bottom: 306px;
     }
@@ -73,6 +71,7 @@
     }
 
     .menu__link {
+        font-weight: 500;
         font-size: 40px;
         line-height: 1, 175;
         text-align: center;
@@ -101,6 +100,9 @@
 
         color: #2196F3;
         text-decoration: none;
+        @media screen and (max-width:380px) {
+        font-size: 24px;
+        }
     }
 
     .menu__mail {

@@ -1,7 +1,7 @@
 .portfolio-card{
     display: block;
     text-decoration: none;
-    border: 1px solid #eeeeee;
+    // border: 1px solid #eeeeee;
     // width: 370px;
     background: $wite-color;
     transition: box-shadow $time $time-function;
@@ -36,7 +36,9 @@
   transform: translateY(100%);
   transition: opacity $time $time-function,
   transform $time $time-function ;
-  
+  @media screen and (min-width: $tablet) and (max-width: $predesktop) {
+    font-size: 17.5px;
+  }
   } 
 
  &:hover, &:focus {

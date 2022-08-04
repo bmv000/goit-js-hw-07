@@ -8,21 +8,33 @@
   @media screen and (max-width: $pretablet){
     .header {
     height: 60px;
-    &__logo {
-    
-        display: flex;
-margin-top: 17px;
+    border-bottom: 1px solid #ececec;
+      &__logo {
+        padding: 12px 0; 
+  // margin-top: 14px;
 
-        // margin-right: 93px;
-    }
+      }
+ }
         .header__nav, .header__contacts{
       display: none;
     }
+.header__inner {
+  display: flex;
+}
+// .header-menu{
+
+// }
     }
-  }
+    
+  
      @media screen  and (min-width: $tablet) and (max-width: $predesktop){
       .header__inner{
         gap: 64px;
+        
+      }
+      .header__link{
+padding-top: 32px;
+  padding-bottom: 32px;
       }
      }
 
@@ -44,7 +56,7 @@ margin-top: 17px;
           line-height: 1.14;
           letter-spacing: 0.02em;
           text-align: left;
-          color: var(--header-color);
+          color: $header-color;
           text-decoration: none;
           
           transition: color $time $time-function;
@@ -83,9 +95,9 @@ margin-top: 17px;
         }
     
         &__logo {
-    
+  
           display: flex;
-          margin-right: 93px;
+          // margin-right: 93px;
     
     
         }
@@ -124,7 +136,7 @@ padding-top: 32px;
   padding-bottom: 32px;
     }
 .header__contacts {
-      gap: 30px;
+      gap: 15px;
     }
     }
   
