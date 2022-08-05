@@ -1,8 +1,9 @@
 .current{
 
-  @media screen and (max-width: $pretablet ) {
-    color: $accent-color;
-  }
+  // @media screen and (max-width: $pretablet ) {
+  //   color: $accent-color;
+  //   position: relative;
+  // }
      @media screen and (min-width: $tablet ){
     position: relative;
   color: $accent-color;

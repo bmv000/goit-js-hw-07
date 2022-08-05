@@ -10,7 +10,7 @@
     .menu-container {
 
         padding: 34px 30px;
-
+position: fixed;
 
 
         z-index: 100;
@@ -80,7 +80,9 @@
         color: #212121;
         text-decoration: none;
 
-
+&.active{
+    color: $accent-color;
+}
     }
 
 
@@ -102,7 +104,7 @@
         color: #2196F3;
         text-decoration: none;
         @media screen and (max-width:380px) {
-        font-size: 24px;
+        font-size: 26px;
         }
     }
 
@@ -139,6 +141,7 @@
 
     .menu__social-list {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 64px;
 
         @media screen and (min-width: $tablet) {

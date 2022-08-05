@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header" >
+     <header class="header" >
         
         <div class="container header__inner">
            
@@ -19,15 +21,6 @@
                     <div class="header__logo">
                         <a href="./index.html" lang="en" class="logo">Web<span class="logo__parttwo">Studio</span></a>
                     </div>
-                    <button class="menu__button header__menu-button" type="button" aria-expanded="false" aria-label="переключатель мобильного меню"
-                    data-menu-button
-          aria-controls="menu-container">
-                        <svg width="40" height="40" class="menu__mobile-button-icon" >
-                            <use class="icon-menu-open" href="./images/symbol-defs.svg#icon-open-menu"></use>
-                             <!-- <use class="icon-menu-close"  href="./images/symbol-defs.svg#icon-close-menu"></use> -->
-                        </svg>
-                    </button> 
-
                     <nav class="header__nav">
                        <ul class="header__nav-link">
                      <li class="link"><a href="./index.html" class="header__link ">Студия</a></li>
@@ -57,6 +50,7 @@
             
         </div>
     </header>
+    
     <main>
         <!-- Наши проекты -->
         <section class="section">
@@ -124,7 +118,7 @@
                          media="(min-width: 1200px)"/>
 
                         <img 
-                        src="./images/portfolio/imgp2-450.jpg" width="450" height="294"
+                        src="./images/portfolio/imgp1-450.jpg" width="450" height="294"
                     alt="Игрок из баскетбольной команды New Orlean хочет сделать бросок а игрок баскетбольной команды Golden Star хочет ему помешать ">
                     </picture>
                         <p class="portfolio-card__text" >Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -449,7 +443,7 @@
 
 <!-- menu -->
 
- <div class="container menu__inner">
+  <div class="container menu__inner">
            
                 
                     
@@ -459,7 +453,7 @@
                     data-menu-button
           aria-controls="menu-container">
                         <svg width="40" height="40" class="menu__mobile-button-icon" >
-                            <!-- <use class="icon-menu-open" href="./images/symbol-defs.svg#icon-open-menu"></use> -->
+                            <use class="icon-menu-open" href="./images/symbol-defs.svg#icon-open-menu"></use>
                              <use class="icon-menu-close"  href="./images/symbol-defs.svg#icon-close-menu"></use>
                         </svg>
                     </button> 
@@ -471,7 +465,7 @@
                     <nav class="menu__nav">
                 <ul class="menu_nav-link">
                      <li class="link"><a href="./index.html" class="menu__link ">Студия</a></li>
-                     <li class="link"><a href="./portfolio.html" class="menu__link current">Портфолио</a></li>
+                     <li class="link"><a href="./portfolio.html" class="menu__link active">Портфолио</a></li>
                      <li class="link"><a href="#" class="menu__link">Контакты</a></li>   
                 </ul>
                 </nav>
